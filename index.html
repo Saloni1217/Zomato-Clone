@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zomato</title>
+    <link rel="icon" href="images/zomato.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        crossorigin="anonymous">
+       
+</head>
+
+<body>
+    <!--HEADER SECTION-->
+    <header>
+        <div class="img-container">
+            <img src="https://b.zmtcdn.com/web_assets/81f3ff974d82520780078ba1cfbd453a1583259680.png">
+        </div>
+        <div class="header-body-section">
+            <nav>
+                <div class="container container-nav">
+                    <div class="logo">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="#FFFFFF" width="10" height="10"
+                            viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img"
+                            class="sc-rbbb40-0 gvsUip">
+                            <title>download-app</title>
+                            <path
+                                d="M18.5793 9.18939H16.5865H16.3199C15.7307 9.18939 15.2529 9.6672 15.2529 10.2583V10.3742C15.2529 10.9659 15.7307 11.444 16.3207 11.444H18.3156H18.5793C19.1696 11.444 19.6488 10.9639 19.6488 10.3742L19.6477 10.2569C19.6488 9.6672 19.1696 9.18939 18.5793 9.18939Z">
+                            </path>
+                            <path
+                                d="M18.5804 6.52262H18.1097V1.35122C18.1097 0.607964 17.5017 0 16.7582 0H7.84167C7.09841 0 6.49045 0.608249 6.49045 1.35122V5.06151C4.69196 6.07821 2.83696 7.14029 2.83296 7.14286C1.82597 7.5573 0.350586 8.89453 0.350586 12.0522C0.350586 12.3342 0.369139 12.5945 0.395113 12.846C0.40339 12.9197 0.412524 12.9904 0.422514 13.0615C0.448488 13.2462 0.481027 13.4229 0.519845 13.5907C0.533831 13.6506 0.544678 13.7131 0.559805 13.7705C0.612039 13.9646 0.67255 14.1467 0.740482 14.32C0.774733 14.4059 0.811839 14.4841 0.84923 14.5646C0.88919 14.6494 0.929436 14.7327 0.972535 14.8106C1.02249 14.9045 1.07244 14.995 1.12724 15.0809C1.14037 15.1009 1.15464 15.1192 1.16805 15.1394C2.46847 17.1052 4.8675 17.114 4.8675 17.114H6.49045V18.6494C6.49045 19.3918 7.09841 19.9997 7.84167 19.9997H16.7579C17.5014 19.9997 18.1094 19.3915 18.1094 18.6494V16.7767H18.3155V16.7755H18.5784C19.1695 16.7755 19.6487 16.2974 19.6476 15.7063L19.6487 15.5898C19.6476 14.9996 19.1695 14.5229 18.5792 14.5229H18.3155H16.5861H16.3195C15.7292 14.5229 15.2525 15.0007 15.2525 15.5907V15.7091C15.2525 16.2977 15.7304 16.7775 16.3203 16.7775H17.1692V17.5008H7.43036V7.79877C7.91959 7.48851 8.37256 7.18995 8.63088 6.98987C9.93957 5.97774 11.1818 5.17169 11.3499 4.4407C11.5688 3.49222 10.8407 2.69302 9.57765 3.34922C9.17976 3.55587 8.36315 4.00885 7.43036 4.53261V2.14129L17.1692 2.14271V6.52205H16.5861V6.52319H16.3209C15.7304 6.52319 15.2511 7.001 15.2511 7.59269V7.70858C15.2511 8.29999 15.7303 8.77665 16.3195 8.77665H16.5846H18.3141H18.5798C19.1695 8.77665 19.6476 8.29884 19.6476 7.70858V7.58955C19.6487 7.00186 19.1709 6.52262 18.5804 6.52262ZM12.2986 17.9752C12.6731 17.9752 12.9751 18.2774 12.9751 18.6511C12.9751 19.0255 12.6728 19.3267 12.2986 19.3267C11.9256 19.3267 11.6242 19.0247 11.6242 18.6511C11.6247 18.2786 11.927 17.9752 12.2986 17.9752ZM13.7266 1.30098H10.8735C10.7839 1.30098 10.7097 1.2282 10.7097 1.13829C10.7097 1.04695 10.7839 0.974169 10.8735 0.974169H13.7266C13.8163 0.974169 13.8893 1.04667 13.8893 1.13829C13.8893 1.22792 13.8163 1.30098 13.7266 1.30098Z">
+                            </path>
+                            <path
+                                d="M18.5788 11.8561H18.3151H16.3193C15.7302 11.8561 15.251 12.3353 15.251 12.9253V13.0423C15.251 13.6329 15.7291 14.1107 16.3193 14.1107H16.5845H18.3139H18.5782C19.1693 14.1107 19.646 13.6329 19.6474 13.0423V12.9253C19.6472 12.3353 19.1705 11.8561 18.5788 11.8561Z">
+                            </path>
+                        </svg>
+                        <a href="https://www.zomato.com/mobile">
+                            <p>Get the App</p>
+                        </a>
+
+                    </div>
+                    <ul id="side-menu">
+                        <li><a href="https://www.zomato.com/investor-relations">Investor Realtions</a></li>
+                        <li><a href="https://www.zomato.com/partner-with-us">Add restaurant</a></li>
+                        <li><a href="#" class="login-pop">Login</a></li>
+                        <!-- <li><a href="#" class="signup-pop">Signup</a></li> -->
+                        <img tabindex="0"
+                            src="https://b.zmtcdn.com/web_assets/b40b97e677bc7b2ca77c58c61db266fe1603954218.png">
+                            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                        </ul>
+                        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                </div>
+            </nav>
+         <!--- -LOGIN AND SIGNUP FORM-->
+           <section class="wrap" >
+            <div class="close"><i class="fas fa-close"></i></div>
+            <div class="form-box login">
+                <h2>LOGIN</h2>
+                <form action="#">
+                    <div class="input-box box1">
+                        <span class="icon icon1"><img
+                                src="https://media.istockphoto.com/id/1051236720/vector/vector-flag-of-the-republic-of-india-proportion-2-3-the-national-flag-of-india-tricolor.jpg?s=612x612&w=0&k=20&c=vcZ3ssSitwTXLGOjA9_8FJ951MCNdSsF-DOHyrb58vA="
+                                alt=""><span> +91 </span><i class="fas fa-phone"></i></span>
+                        <input type="number" required>
+                        <label>Number</label>
+                    </div>
+
+                    <button type="submit" class="btn" id="loginbtn">Login</button>
+                    <div class="reg">
+                        <p> New to Zomato ?<a href="#" class="signup-link"> Create one</a></p>
+                    </div>
+                </form>
+            </div>
+            <div class="form-box signup" id="signup">
+                <h2>SIGNUP</h2>
+                <form action="#">
+                    <div class="input-box">
+                        <span class="icon"><i class="fas fa-user"></i></span>
+                        <input type="text" required>
+                        <label>Full name</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><i class="fas fa-envelope"></i></span>
+                        <input type="email" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="agree">
+                        <label><input type="checkbox">
+                            I agree to Zomato's <a>Terms of services, Privacy policy and content policy</a></label>
+                    </div>
+                    <button type="submit" id="si-btn" class="btn">Create Account</button>
+                    <div class="reg">
+                        <p> Already have an account ?<a href="#" class="login-link">Login</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+       
+        <!--DISCOVER SECTION-->
+        <div class="header-body">
+            <div class="container container-body">
+                <img class="zomato-logo"
+                    src="https://b.zmtcdn.com/web_assets/8313a97515fcb0447d2d77c276532a511583262271.png">
+                <p class="discover">Discover the best foods & drinks in Ahmedabad</p>
+                <div class="search-bar">
+                    <div class="location-detect">
+                        <i class="fas fa-map-marker-alt market-map"></i>
+                        <input type="text" placeholder="Ahmedabad">
+
+                        <i class="fas fa-sort-down fa-sort-down"></i>
+                    </div>
+                    <div class="line">|</div>
+                    <div class="search-item">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" placeholder="Search for restaurant, cuisine or a dish">
+                    </div>
+                </div>
+            </div>
+        </div>
+        </header>
+    <!--SECTION-1--->
+    <section>
+        <div class="sec-1">
+            <div class="sec-1-item">
+                <div class="item-details">
+                    <a href="https://www.zomato.com/ahmedabad/order-food-online?delivery_subzone=11802">
+                        <h2>Order Online</h2>
+                        <p>Stay home and order to your doorstep</p>
+                </div>
+                <img src="https://b.zmtcdn.com/webFrontend/e5b8785c257af2a7f354f1addaf37e4e1647364814.jpeg?output-format=webp&fit=around|402:360&crop=402:360;*,*"
+                    alt="bg">
+                </a>
+            </div>
+            <div class="sec-1-item">
+                <div class="item-details">
+                    <a href="https://www.zomato.com/ahmedabad/dine-out">
+                        <h2>Dining</h2>
+                        <p>View the city's favourite dining venues</p>
+                </div>
+                <img src="https://b.zmtcdn.com/webFrontend/d026b357feb0d63c997549f6398da8cc1647364915.jpeg?output-format=webp&fit=around|402:360&crop=402:360;*,*"
+                    alt="bg">
+                </a>
+            </div>
+            <div class="sec-1-item">
+                <div class="item-details">
+                    <a href="https://www.zomato.com/ahmedabad/restaurants?category=3">
+                        <h2>Nightlife and Club</h2>
+                        <p>Explore the city's top nightlife outlets</p>
+                </div>
+                <img class="im"
+                    src="https://b.zmtcdn.com/data/pictures/9/19952549/3be4f455b2e1e6549a418a8b81ecb730.jpeg" alt="bg">
+                </a>
+            </div>
+        </div>
+    </section>
+    <!--SECTION-2-->
+    <section>
+        <div class="center-sec">
+            <div class="sec-2">
+                <h3>Collections</h3>
+                <div>
+                    <h6>Explore curated lists of top restaurants, cafes, pubs, and bars in Ahmedabad, based on trends
+                    </h6>
+                    <a href="https://www.zomato.com/ahmedabad/collections"> <span>All Collections in Ahmedabad &nbsp;
+                            <i class="fas fa-caret-right"></i> </span></a>
+                </div>
+            </div>
+            <div class="sec-2a">
+                <div class="img-det"><a href="https://www.zomato.com/ahmedabad/legendary-places">
+                        <div><span>The Legends of Ahmedabad <br> 11 Places</span><i class="fas fa-caret-right"></i>
+                        </div>
+                        <img src="https://b.zmtcdn.com/data/collections/22eb6aa5b01680eef6d9e4b22c60613e_1706256565.png?fit=around|562.5:360&crop=562.5:360;*,*"
+                            alt="">
+                    </a>
+                </div>
+                <div class="img-det"><a href="https://www.zomato.com/ahmedabad/newly-opened">
+                        <div><span>Newly Opened Restaurants <br> 5 Places</span><i class="fas fa-caret-right"></i></div>
+                        <img src="https://b.zmtcdn.com/data/collections/9947b8cfe56422abae280ed1dbf3b5c8_1709810396.jpg?fit=around|562.5:360&crop=562.5:360;*,*"
+                            alt="">
+                    </a>
+                </div>
+                <div class="img-det"><a href="https://www.zomato.com/ahmedabad/great-breakfasts">
+                        <div><span>Top Breakfast Stops <br> 8 Places</span><i class="fas fa-caret-right"></i></div>
+                        <img src="https://b.zmtcdn.com/data/collections/02ea73ed83f5c09676eceb36d505fe8e_1709812170.png?fit=around|562.5:360&crop=562.5:360;*,*"
+                            alt="">
+                    </a>
+                </div>
+                <div class="img-det"><a href="https://www.zomato.com/ahmedabad/rooftop">
+                        <div><span>Best Rooftops Places <br> 12 Places</span><i class="fas fa-caret-right"></i></div>
+                        <img src="https://b.zmtcdn.com/data/collections/2b9361aa328a43b08986f77bbec280bd_1709811922.png"
+                            alt="">
+                    </a>
+                </div>
+                <!-- <div class="img-det">
+                <div><span>Work-friendly Places <br> 6 Places</span><i class="fas fa-caret-right"></i></div>
+                <img src="https://b.zmtcdn.com/data/collections/f08ba2c32f771b2d90736d9b0f8a828d_1675250865.jpg?fit=around|562.5:360&crop=562.5:360;*,*" alt="">
+            </div>
+            <div class="img-det">
+                <div><span>Best Insta-worthy Places <br> 9 Places</span><i class="fas fa-caret-right"></i></div>
+                <img src="https://b.zmtcdn.com/data/collections/be1e7f0e237a0e5ecb9fcb5f321b5567_1709811699.png?fit=around|562.5:360&crop=562.5:360;*,*" alt="">
+            </div> -->
+            </div>
+        </div>
+        <!--SECTION-3-->
+        <h1>Popular localities in and around<b> Ahmedabad</b></h1>
+        <div class="sec-2b">
+            <div class="locations">
+                <div><a href="https://www.zomato.com/ahmedabad/bodakdev-restaurants">
+                        <span>Bodakdev
+                            <br>
+                            <p>463 Places</p>
+                        </span>
+                    </a>
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+            </div>
+            <div class="locations">
+                <div><a href="https://www.zomato.com/ahmedabad/satellite-restaurants">
+                        <span>Satellite
+                            <br>
+                            <p>422 Places</p>
+                        </span>
+                    </a>
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+            </div>
+            <div class="locations">
+                <div><a href="https://www.zomato.com/ahmedabad/gurukul-restaurants">
+                        <span>Gurukul
+                            <br>
+                            <p>120 Places</p>
+                        </span>
+                    </a>
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+            </div>
+            <div class="locations">
+                <div><a href="https://www.zomato.com/ahmedabad/navrangpura-restaurants">
+                        <span>Navrangpura
+                            <br>
+                            <p>396 Places</p>
+                        </span>
+                    </a>
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+            </div>
+            <div class="locations">
+                <div><a href="https://www.zomato.com/ahmedabad/vastrapur-restaurants">
+                        <span>Vastrapur
+                            <br>
+                            <p>294 Places</p>
+                        </span>
+                    </a>
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+            </div>
+            <div class="locations">
+                <div><a href="https://www.zomato.com/ahmedabad/thaltej-restaurants">
+                        <span>Thaltej
+                            <br>
+                            <p>440 Places</p>
+                        </span>
+                    </a>
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+            </div>
+            <div class="locations">
+                <div><a href="https://www.zomato.com/ahmedabad/prahlad-nagar-restaurants">
+                        <span>Prahlad Nagar
+                            <br>
+                            <p>244 Places</p>
+                        </span>
+                    </a>
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+            </div>
+            <div class="locations">
+                <div><a href="https://www.zomato.com/ahmedabad/cg-road-restaurants">
+                        <span>C G Road
+                            <br>
+                            <p>109 Places</p>
+                        </span>
+                    </a>
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+            </div>
+            <div class="locations">
+                <div>
+                    <span>See More </span>
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+
+    </section>
+    <div class="sec-3">
+        <div class="flex contact">
+            <img class="ok" src="https://b.zmtcdn.com/data/o2_assets/f773629053b24263e69f601925790f301680693809.png"
+                alt="">
+            <div class="address">
+                <h2>Get the Zomato app</h2>
+                <p>We will send you a link, open it on your phone to download the app</p>
+                <div class="flex radio">
+                    <div>
+                        <input type="radio" name="fill" id="email" checked>
+                        <label for="email">Email</label>
+
+                    </div>
+                    <div>
+                        <input type="radio" name="fill" id="phone">
+                        <label for="phone">Phone</label>
+
+                    </div>
+                </div>
+                <div class="flex email">
+                    <input type="text" class="input">
+                    <label for="" class="place">Email</label>
+                    <button>Share App Link</button>
+                </div>
+                <p class="download">
+                    Download App from
+                </p>
+                <div class="flex app">
+                    <a href="https://zomato.onelink.me/xqzv/CTA"> <img
+                            src="https://b.zmtcdn.com/data/webuikit/23e930757c3df49840c482a8638bf5c31556001144.png"
+                            alt=""></a>
+                    <a href="https://zomato.onelink.me/xqzv/CTA"> <img
+                            src="https://b.zmtcdn.com/data/webuikit/9f0c85a5e33adb783fa0aef667075f9e1556003622.png"
+                            alt=""></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--SECTION-4-->
+    <section class="sec-4">
+        <h1>Explore options near me</h1>
+        <details>
+            <summary>Popular cuisines near me</summary>
+            <div class="description">
+                <ul>
+                    <li><a href="https://www.zomato.com/bakery-restaurants-near-me">Bakery food near me</li></a>
+                    <li><a href="https://www.zomato.com/beverages-restaurants-near-me">Beverages food near me</li></a>
+                    <li><a href="https://www.zomato.com/biryani-restaurants-near-me">Biryani food near me</li></a>
+                    <li><a href="https://www.zomato.com/burger-restaurants-near-me">Burger food near me</li></a>
+                    <li><a href="https://www.zomato.com/cafe-restaurants-near-me">cafe food near me</li></a>
+                    <li><a href="https://www.zomato.com/chinese-restaurants-near-me">chinese food near me</li></a>
+                    <li><a href="https://www.zomato.com/coffee-restaurants-near-me">Coffee food near me</a></li>
+                </ul>
+            </div>
+        </details>
+        <details>
+            <summary>Popular restaurant types near me</summary>
+            <div class="description">
+                <ul>
+                    <li><a href="https://www.zomato.com/bakeries-near-me">Bakeries near me</a></li>
+                    <li><a href="https://www.zomato.com/casual-dining-near-me">casual dining near me</a></li>
+                    <li><a href="https://www.zomato.com/food-trucks-near-me">Food truck near me</a></li>
+                    <li><a href="https://www.zomato.com/fine-dining-near-me">Fine food near me</a></li>
+                    <li><a href="https://www.zomato.com/sweet-shops-near-me">Quick Bites near me</a></li>
+                    <li><a href="https://www.zomato.com/sweet-shops-near-me">Sweet Shops near me</a></li>
+                </ul>
+            </div>
+        </details>
+        <details>
+            <summary>Top Restaurants chains</summary>
+            <div class="description">
+                <ul>
+                    <li><a href="https://www.zomato.com/ahmedabad/restaurants/bikanervala">Bikanervala</a></li>
+                    <li><a href="https://www.zomato.com/ahmedabad/restaurants/burger-king">Burger King</a></li>
+                    <li><a href="https://www.zomato.com/ahmedabad/restaurants/mcdonalds">McDonald's</a></li>
+                    <li><a href="https://www.zomato.com/ahmedabad/restaurants/pizza-hut">Pizza hut</a></li>
+                    <li><a href="https://www.zomato.com/ahmedabad/restaurants/dunkin-donuts">Dunkin-Donut's</a></li>
+                    <li><a href="https://www.zomato.com/ahmedabad/restaurants/kfc">KFC</a></li>
+                </ul>
+            </div>
+        </details>
+        <details>
+            <summary>Cities We Deliver To</summary>
+            <div class="description">
+                <ul>
+                    <li><a href="https://www.zomato.com/kolkata/">Kolkata</a></li>
+                    <li><a href="https://www.zomato.com/ncr/">Delhi NCR</a></li>
+                    <li><a href="https://www.zomato.com/mumbai/">Mumbai</a></li>
+                    <li><a href="https://www.zomato.com/chennai/">Chennai</a></li>
+                    <li><a href="https://www.zomato.com/pune/">Pune</a></li>
+                    <li><a href="https://www.zomato.com/surat/">Surat</a></li>
+                    <li><a href="https://www.zomato.com/jaipur/">Jaipur</a></li>
+                    <li><a href="https://www.zomato.com/agra/">Agra</a></li>
+                    <li><a href="https://www.zomato.com/shimla/">Shimla</a></li>
+                    <li><a href="https://www.zomato.com/manali/">Manali</a></li>
+                </ul>
+            </div>
+        </details>
+    </section>
+    <!---SECTION-5 OR FOOTER-->
+    <section class="footer">
+        <div class="sec-5">
+            <div class="first">
+                <img class="zm"
+                    src="https://b.zmtcdn.com/web_assets/b40b97e677bc7b2ca77c58c61db266fe1603954218.png?fit=around|198:42&crop=198:42;*,*"
+                    alt="">
+                <div class="first-1a">
+                    <div>
+                        <span>
+                            <img src="https://media.istockphoto.com/id/1051236720/vector/vector-flag-of-the-republic-of-india-proportion-2-3-the-national-flag-of-india-tricolor.jpg?s=612x612&w=0&k=20&c=vcZ3ssSitwTXLGOjA9_8FJ951MCNdSsF-DOHyrb58vA="
+                                alt="">
+                            India
+                            <i class="fas fa-chevron-down"></i></span>
+                    </div>
+                    <div>
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="#1C1C1C" width="18" height="18"
+                                viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img"
+                                class="sc-rbbb40-0 iwHbVQ">
+                                <title>language-globe</title>
+                                <path
+                                    d="M10 0c-5.523 0-10 4.477-10 10s4.477 10 10 10c5.523 0 10-4.477 10-10v0c-0.011-5.518-4.482-9.989-9.999-10h-0.001zM17.14 6.18h-3c-0.264-1.393-0.63-2.62-1.107-3.791l0.047 0.131c1.755 0.733 3.161 2.010 4.039 3.618l0.021 0.042zM18.1 10c-0.002 0.676-0.090 1.33-0.252 1.954l0.012-0.054h-3.44c0.059-0.57 0.092-1.231 0.092-1.9s-0.034-1.33-0.099-1.982l0.007 0.082h3.44c0.15 0.57 0.238 1.224 0.24 1.899v0.001zM1.9 10c0.002-0.676 0.090-1.33 0.252-1.954l-0.012 0.054h3.46c-0.059 0.57-0.092 1.231-0.092 1.9s0.034 1.33 0.099 1.982l-0.007-0.082h-3.46c-0.15-0.57-0.238-1.224-0.24-1.899v-0.001zM7.48 8.1h5.040c0.063 0.57 0.099 1.231 0.099 1.9s-0.036 1.33-0.107 1.981l0.007-0.081h-5.040c-0.063-0.57-0.099-1.231-0.099-1.9s0.036-1.33 0.107-1.981l-0.007 0.081zM10.76 1.9c0.603 1.228 1.106 2.657 1.436 4.152l0.024 0.128h-4.44c0.354-1.623 0.857-3.052 1.51-4.395l-0.050 0.115c0.24 0 0.5 0 0.76 0s0.48 0 0.76 0zM6.96 2.48c-0.445 1.051-0.825 2.291-1.079 3.576l-0.021 0.124h-3c0.899-1.65 2.305-2.927 4.007-3.64l0.053-0.020zM2.86 13.8h3c0.262 1.4 0.629 2.634 1.107 3.811l-0.047-0.131c-1.757-0.738-3.165-2.022-4.039-3.637l-0.021-0.043zM9.24 18.1c-0.605-1.234-1.108-2.67-1.437-4.172l-0.023-0.128h4.44c-0.352 1.63-0.855 3.066-1.51 4.415l0.050-0.115c-0.24 0-0.5 0-0.76 0s-0.48 0-0.76 0zM13.040 17.52c0.431-1.046 0.798-2.28 1.041-3.558l0.019-0.122h3.040c-0.902 1.642-2.308 2.912-4.006 3.62l-0.054 0.020z">
+
+                                </path>
+                            </svg>
+                            English <i class="fas fa-chevron-down"></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="sec">
+                <div>
+                    <h4>ABOUT ZOMATO</h4>
+                    <a href="https://www.zomato.com/who-we-are">Who We Are</a>
+                    <a href="https://blog.zomato.com/">Blog</a>
+                    <a href="https://www.zomato.com/careers">Work With Us</a>
+                    <a href="https://www.zomato.com/investor-relations">Investor Realtions</a>
+                    <a href="https://www.zomato.com/report-fraud">Report Fraud</a>
+                    <a href="https://blog.zomato.com/press-kit">Press Kit</a>
+                    <a href="https://www.zomato.com/contact">Contact Us</a>
+                </div>
+                <div>
+                    <h4>ZOMAVERSE</h4>
+                    <a href="https://www.zomato.com/"> Zomato</a>
+                    <a href="https://www.blinkit.com/"> Blinkit</a>
+                    <a href="https://www.feedingindia.org/"> Feeding India</a>
+                    <a href="https://www.hyperpure.com/"> Hyperpure</a>
+                    <a href="https://www.zomato.com/zomaland"> Zomaland</a>
+                    <a href="https://www.weatherunion.com/">Weather Union</a>
+                </div>
+                <div>
+                    <h4>FOR RESTAURANTS</h4>
+                    <a href="https://www.zomato.com/partner_with_us">Partner With Us</a>
+                    <a
+                        href="https://play.google.com/store/apps/details?id=com.application.services.partner&hl=en_IN&gl=US">
+                        Apps For You</a>
+
+                </div>
+                <div>
+                    <h4>LEARN MORE</h4>
+                    <a href="https://www.zomato.com/privacy"> Privacy</a>
+                    <a href="https://www.zomato.com/security"> Security</a>
+                    <a href="https://www.zomato.com/conditions"> Terms</a>
+                    <a href="https://www.zomato.com/directory"> Sitemap</a>
+
+                </div>
+                <div class="soc-links">
+                    <h4>Social Links</h4>
+                    <div>
+                        <a href="https://www.facebook.com/zomato"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/zomato/"> <i class="fab fa-instagram"></i></a>
+                        <a href="https://twitter.com/zomato"> <i class="fab fa-twitter"></i></a>
+                        <a href="https://in.linkedin.com/company/zomato"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.youtube.com/zomato"><i class="fab fa-youtube"></i></a>
+
+                    </div>
+                    <a href="https://link.zomato.com/xqzv/downloadZomatoIos"><img
+                            src="https://b.zmtcdn.com/data/webuikit/9f0c85a5e33adb783fa0aef667075f9e1556003622.png"
+                            alt=""></a>
+                    <a href="https://link.zomato.com/xqzv/downloadZomatoAndroid"> <img
+                            src="https://b.zmtcdn.com/data/webuikit/23e930757c3df49840c482a8638bf5c31556001144.png"
+                            alt=""></a>
+                </div>
+            </div>
+            <hr>
+            <p class="third">
+                By continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy Policy and
+                Content Policies. All trademarks are properties of their respective owners. 2008-2024 © Zomato™ Ltd. All
+                rights reserved.
+            </p>
+
+        </div>
+    </section>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+    var sidemenu = document.getElementById("side-menu");
+        function openmenu() {
+            alert("hello");
+            sidemenu.style.display = "block";
+     }
+        function closemenu() {
+
+            sidemenu.style.display = "none";
+        }
+</script>
+<script src="script.js"></script>
+
+
+
+
+</body>
+
+</html>
