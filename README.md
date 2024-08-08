@@ -1,0 +1,1 @@
+This is a clone of the popular food delivery and restaurant discovery platform, Zomato, built for educational purposes. It aims to replicate the core features and functionality of the original platform.
