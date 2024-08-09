@@ -919,7 +919,7 @@ nav ul img {
     display: none;
 }
 
-@media only screen and (max-width:1000px) {
+@media only screen and (max-width:800px) {
     html {
         overflow-x: hidden;
  }
@@ -944,7 +944,7 @@ nav ul img {
         padding-top: 50vb;
         z-index: 2;
         transition: right 0.5s;
-        display: block;
+        display: none;
         color: #000;
     }
 
